@@ -1,0 +1,90 @@
+@import './../../foundation/variable.scss';
+#about{
+    line-height: 1.9;
+    .about-content{
+        padding:60px 40px;
+        .small-title{
+            letter-spacing: .1rem;
+        }
+        .post{
+            img{
+                display:inline-block;
+                width: 780px;
+                height:auto;
+                margin-bottom:1rem;
+            }
+            @media(max-width:767px){
+                img{
+                    width:345px;
+                }
+            }
+            ul{
+                margin-bottom:24px;
+                line-height: 1.8px;
+                text-align:center;
+                a{
+                    display:inline-block;
+                    padding:0 .25rem;
+                    transition:all .1s;
+                    li{
+                        img{
+                            height:36px;
+                            width:auto;
+                        }
+                    }
+                }
+                a:hover{
+                    opacity:1;
+                    transform: scale3d(1.1, 1.1, 1.1);
+                }
+            }
+            p{
+                margin-bottom:1.5rem;
+                font-size:15px;
+                font-weight:500;
+            }
+            @media(max-width:767px){
+                p{font-size:14px;
+                    line-height: 1.7;
+                }
+            }
+            h3{
+                margin-top:1.5rem;
+                position:relative;
+                font-size:20px;
+                margin-bottom:1rem;
+                padding-left:1rem;
+            }
+            @media(max-width:767px){
+                h3{
+                    font-size:18px;
+                }
+            }
+            h3::before{
+                position:absolute;
+                top:0;
+                left:0;
+                content:'';
+                width:4px;
+                height:100%;
+                border-radius:3px;
+                background-color:$font-color-black;
+            }
+        }
+    }
+    @media(max-width:767px){
+        .about-content{
+            padding:30px 15px;
+        }
+    }
+}
+
+.linkhome{
+    text-align: center;
+    padding:40px 0;
+    a{
+        color:$base-color;
+        transition:opacity .3s;
+        font-weight: 400;
+    }
+}

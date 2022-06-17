@@ -1,0 +1,46 @@
+@import './../../foundation/variable.scss';
+#works{
+    .works-title{
+        font-size:34px;
+        margin-bottom:40px;
+        text-align: center;
+        color:$base-color;
+    }
+    .workslist{
+        display:grid;
+        column-gap:2%;
+        grid-template-columns:repeat(4, 1fr);
+        row-gap:30px;
+        .workslist-content{
+            .workslist-images{
+                img{
+                    max-width:100%;
+                    height:auto;
+                    vertical-align:bottom;
+                }
+            }
+            .workslist-infomations{
+                .workslist-infomations__title{
+                    font-size:14px;
+                }
+                .workslist-infomations__sub{
+                    font-size:12px;
+                    display:flex;
+                    flex-wrap:wrap;
+                    font-weight:1;
+                    color:$font-color-gray;
+                }
+            }
+            
+        }
+    }
+    @media(max-width:767px){
+        .workslist{
+            grid-template-columns:repeat(2,1fr);
+        }
+    }
+    .works-button{
+        margin-top:30px;
+        text-align: center;
+    }
+}

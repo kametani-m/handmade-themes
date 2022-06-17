@@ -1,0 +1,17 @@
+@import './../../foundation/variable.scss';
+
+.button{
+    border-radius: 40px;
+    font-size:14px;
+    display:inline-block;
+    text-align: center;
+    min-width:220px;
+    margin:0 auto !important;
+    padding:1.2em 2em ;
+    transition:.3s;
+    letter-spacing: .05em;
+    color:$font-color-white;
+    background-color: $base-color;
+    border:1px solid $base-color;
+    transition:all .1s;
+}
